@@ -1,0 +1,19 @@
+body {
+    background-color: magenta;
+ }
+
+ img {
+    border-style: solid;
+    border-color: silver;
+    border-width: 6px;
+    /* width: 25%; */
+    }
+
+    h5 {
+        color: green;
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+        padding: 1rem;
+        width: 25%;
+      }            
