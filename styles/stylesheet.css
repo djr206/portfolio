@@ -1,19 +1,76 @@
 body {
-    background-color: magenta;
+    background-color: navajowhite;
  }
 
- img {
+ h1 {
+    color: green;
     border-style: solid;
-    border-color: silver;
-    border-width: 6px;
-    /* width: 25%; */
-    }
+    border-width: 5px;
+    border-color: purple;
+    border-radius: 12px;
+    /* margin: auto; */
+    padding: 1rem;
+  } 
 
-    h5 {
-        color: green;
+  h2 {
+    color: royalblue;
+    border-style: solid;
+    border-width: 3px;
+    border-color: purple;
+    border-radius: 12px;
+    /* margin: auto; */
+    padding: 1rem;
+  }   
+ 
+  h3 {
+    /* color: cadetblue;
+    border-style: solid;
+    border-width: 3px;
+    border-color: purple;
+    border-radius: 12px;
+    padding: 1rem; */
+    width: 475px;
+  border: 15px solid green;
+  padding: .5rem;
+  margin: 20px;
+  }   
+  
+  h4 {
+    color: aqua;
+    border-style: dotted solid double dashed;
+    border-width: 3px;
+    border-color: purple;
+    /* margin: auto; */
+    padding: 1rem;
+  }     
+ 
+h5 {
+    color: green;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    padding: 1rem;
+    width: 25%;
+    }            
+
+    img {
         border-style: solid;
-        border-width: 1px;
-        border-color: red;
-        padding: 1rem;
-        width: 25%;
-      }            
+        border-color: brown;
+        border-width: 6px;
+        /* width: 25%; */
+        }
+    
+.lead-paragraph {
+    color: hsl(56, 100%, 25%);
+    font-weight: bold;
+    background-color: rgb(19, 2, 2);
+    width: 8rem;
+    margin: 1rem;
+
+    }    
+.important {
+    font-weight: bold;
+    }
+.important:hover {
+    background-color: rgb(166, 255, 0);
+    }     
