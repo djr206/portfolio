@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 .sansserif {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-section {
+.p-aside {
     color: slategray;
+    position: static;
+    text-align: left;
 }
 
 a:link {
@@ -14,21 +20,13 @@ a {
     color: #add8e6;
 }
 
-/* aside {
-    position: absolute;
-    right: 10px;
-    top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-} */
-
 aside {
     float: right;
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 header {
     height: 12rem;
-    background-color: #add8e6; 
+    background-color: rgba(4, 0, 255, 0.74); 
 }
 
 h1 {
@@ -46,8 +44,53 @@ h3.uppercase {
     text-transform: uppercase;
 }      
 
-img {
+h6 {
+    text-align: center;
+    color: white;
+}
+
+#img-side {
     position: relative;
     left: -40px;
 }
 
+#img-foot {
+    padding: 2rem 0px 0px 0px;
+}
+
+#logo {
+    position: relative;
+    left: 38rem;
+    bottom: 25rem;
+}
+
+p {
+    color: white;
+    position: relative;
+    text-align: center;
+    bottom: 24rem;
+}
+
+.header-nav {
+    height: 4rem;
+    background-color: lightgrey;
+}
+
+.nav-a {
+    color: black;
+    position: relative;
+    left: 15rem;
+    top: 1.5rem;
+}
+
+.foot-nav {
+    position: relative;
+    color: white;
+    bottom: 23rem;
+    text-align: center;
+    z-index: 1;
+}
+
+#foot-h6 {
+    color: white;
+}
