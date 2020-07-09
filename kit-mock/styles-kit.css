@@ -122,6 +122,11 @@ p {
     bottom: 24rem;
 }
 
+section p q {
+    color: green;
+    padding-top: 2em;
+}
+
 .p-main {
     color: orangered;
     position: inherit;
@@ -129,8 +134,10 @@ p {
     left: 15rem;
     width: 50rem;
     z-index: 2;
-    /* float: left; */
-    /* bottom: 24rem; */
+}
+
+#d-s-h2 {
+    color: black;
 }
 
 .foot-nav {
