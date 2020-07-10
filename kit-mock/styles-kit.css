@@ -4,9 +4,9 @@
 
 .sansserif {
     font-family: sans-serif, Arial, Helvetica;
-  }
+ }
 
-  h2 {
+h2 {
     position: relative;
     float: left;
     text-transform: uppercase;
@@ -24,11 +24,6 @@ h4 {
 h3 {
     text-transform: uppercase;
 }  
-/* 
-h2.uppercase {
-    text-transform: uppercase;
-    left: 15rem;
-}   */
 
 h6 {
     text-align: center;
@@ -49,7 +44,7 @@ h6 {
 
 a:link {
     text-decoration: none;
-  }
+}
 
 a {
     color: #add8e6;
@@ -109,11 +104,15 @@ nav h3 {
     bottom: 25rem;
 }
 
+body {
+    border: 3px solid black;
+}
+/* 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-}
+} */
 
 p {
     color: white;
@@ -148,10 +147,24 @@ section p q {
     z-index: 1;
 }
 
+#f-img1 {
+    top: 2em;
+    position: relative;
+    /* width: 100%; */
+    /* height: auto; */
+    /* background-size: contain; */
+    /* background-position: center; */
+    /* background-image: url('banner.jpg') no-repeat; */
+}
+
 #color {
     color: rgb(56, 155, 189);
 }
 
-#foot-h6 {
-    color: white;
+footer h6 a {
+    color: yellow;
+    position: relative;
+    margin-right: 2em;
+    left: unset;
+    top: unset;
 }
