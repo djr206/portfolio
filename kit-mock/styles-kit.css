@@ -53,6 +53,7 @@ a {
 aside {
     float: right;
     margin-top: 2rem;
+    z-index: 1;
 }
 
 header {
@@ -98,27 +99,44 @@ nav h3 {
     padding: 2rem 0px 0px 0px;
 }
 
-#logo {
+/* #logo {
     position: relative;
     left: 38rem;
     bottom: 25rem;
+} */
+
+#logo {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    bottom: 23rem;
 }
 
 body {
     border: 3px solid black;
 }
-/* 
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-} */
+}
 
 p {
     color: white;
     position: relative;
     text-align: center;
     bottom: 24rem;
+}
+
+footer p {
+    
+        color: yellow;
+        position: relative;
+        text-align: center;
+        bottom: 21rem;
+    
 }
 
 section p q {
@@ -142,19 +160,20 @@ section p q {
 .foot-nav {
     position: relative;
     color: white;
-    bottom: 23rem;
+    bottom: 21rem;
     text-align: center;
-    z-index: 1;
+    z-index: 0;
 }
 
 #f-img1 {
     top: 2em;
     position: relative;
-    /* width: 100%; */
+    width: 100%;
     /* height: auto; */
     /* background-size: contain; */
     /* background-position: center; */
     /* background-image: url('banner.jpg') no-repeat; */
+    z-index: -1;
 }
 
 #color {
@@ -167,4 +186,40 @@ footer h6 a {
     margin-right: 2em;
     left: unset;
     top: unset;
+    z-index: 0;
 }
+
+    /* 07.12.20 tooltip code from https://www.scriptol.com/css/tooltip.php */
+.tooltip {
+    text-decoration:none;
+    position:relative;
+  }
+   
+  .tooltip span {
+    display:none;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    color:black;
+    background:white; 
+  }
+.tooltip span img {
+    float:left;
+    /* margin:0px 8px 8px 0; */
+  }
+   
+  .tooltip:hover span {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1000;
+    width:auto;
+    max-width:320px;
+    min-height:128px;
+    border:1px solid black;
+    margin-top:12px;
+    margin-left:32px;
+    overflow:hidden;
+    /* padding:8px; */
+  }
