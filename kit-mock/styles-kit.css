@@ -99,12 +99,6 @@ nav h3 {
     padding: 2rem 0px 0px 0px;
 }
 
-/* #logo {
-    position: relative;
-    left: 38rem;
-    bottom: 25rem;
-} */
-
 #logo {
     position: relative;
     margin-left: auto;
@@ -136,7 +130,6 @@ footer p {
         position: relative;
         text-align: center;
         bottom: 21rem;
-    
 }
 
 section p q {
