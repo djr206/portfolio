@@ -6,6 +6,19 @@
     font-family: sans-serif, Arial, Helvetica;
  }
 
+ .profiles-sec {
+     position: relative;
+     margin: 4rem 4rem 2rem 15rem;
+     z-index: 4;
+ }
+
+ .profiles-foot {
+     right: auto;
+ }
+
+ .profiles-nav {
+     left: -4rem;
+ }
 h2 {
     position: relative;
     float: left;
@@ -38,8 +51,9 @@ h6 {
 
 .section-text {
     float: left;
-    margin-left: 15rem;
-    margin-top: 2rem;
+    /* margin-left: 15rem; */
+    /* margin-top: 2rem; */
+    margin: 2rem 4rem 2rem 15rem;
 }
 
 a:link {
@@ -132,9 +146,19 @@ footer p {
         bottom: 21rem;
 }
 
+section a h5 {
+    color: black;
+}
+
 section p q {
     color: green;
     padding-top: 2em;
+}
+
+section p {
+    color: red;
+    position: unset;
+    text-align: unset;
 }
 
 .p-main {
@@ -155,22 +179,15 @@ section p q {
     color: white;
     bottom: 21rem;
     text-align: center;
-    z-index: 0;
+    z-index: -9;
 }
 
 #f-img1 {
     top: 2em;
     position: relative;
     width: 100%;
-    /* height: auto; */
-    /* background-size: contain; */
-    /* background-position: center; */
-    /* background-image: url('banner.jpg') no-repeat; */
-    z-index: -1;
-}
-
-#color {
-    color: rgb(56, 155, 189);
+    overflow: hidden;
+    z-index: -11;
 }
 
 footer h6 a {
@@ -179,7 +196,11 @@ footer h6 a {
     margin-right: 2em;
     left: unset;
     top: unset;
-    z-index: 0;
+    z-index: -7;
+}
+
+#color {
+    color: rgb(56, 155, 189);
 }
 
     /* 07.12.20 tooltip code from https://www.scriptol.com/css/tooltip.php */
