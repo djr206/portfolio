@@ -19,6 +19,7 @@
  .profiles-nav {
      left: -4rem;
  }
+
 h2 {
     position: relative;
     float: left;
@@ -54,6 +55,7 @@ h6 {
     /* margin-left: 15rem; */
     /* margin-top: 2rem; */
     margin: 2rem 4rem 2rem 15rem;
+    overflow-wrap: break-word;
 }
 
 a:link {
@@ -73,11 +75,16 @@ aside {
 header {
     height: 12rem;
     background-color: rgba(60, 58, 185, 0.74); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 header h1 {
     padding: 2.5rem 0 0 15rem;
-    text-transform: uppercase;    
+    text-transform: uppercase; 
+    font-style: italic;
+    font: bold;
 }
 
 .header-nav {
@@ -111,6 +118,7 @@ header h1 {
 
 #img-foot {
     padding: 2rem 0px 0px 0px;
+    z-index: -9;
 }
 
 #logo {
@@ -119,6 +127,7 @@ header h1 {
     margin-right: auto;
     display: block;
     bottom: 23rem;
+    z-index: -19;
 }
 
 body {
@@ -136,6 +145,7 @@ p {
     position: relative;
     text-align: center;
     bottom: 24rem;
+    /* font-size: 2rem; */
 }
 
 footer p {
@@ -144,6 +154,9 @@ footer p {
         position: relative;
         text-align: center;
         bottom: 21rem;
+        z-index: -10;
+        overflow: hidden;
+
 }
 
 section a h5 {
@@ -168,6 +181,7 @@ section p {
     left: 15rem;
     width: 50rem;
     z-index: 2;
+    font-family: 'Suwannaphum', cursive;
 }
 
 #d-s-h2 {
@@ -179,7 +193,7 @@ section p {
     color: white;
     bottom: 21rem;
     text-align: center;
-    z-index: -9;
+    z-index: 3;
 }
 
 #f-img1 {
@@ -187,7 +201,7 @@ section p {
     position: relative;
     width: 100%;
     overflow: hidden;
-    z-index: -11;
+    z-index: -21;
 }
 
 footer h6 a {
@@ -198,6 +212,11 @@ footer h6 a {
     top: unset;
     z-index: -7;
 }
+
+/* footer {
+    display: flex;
+    flex-direction: column;
+} */
 
 #color {
     color: rgb(56, 155, 189);
@@ -217,9 +236,9 @@ footer h6 a {
     color:black;
     background:white; 
   }
+
 .tooltip span img {
     float:left;
-    /* margin:0px 8px 8px 0; */
   }
    
   .tooltip:hover span {
@@ -235,7 +254,6 @@ footer h6 a {
     margin-top:12px;
     margin-left:32px;
     overflow:hidden;
-    /* padding:8px; */
   }
 
  
@@ -271,14 +289,12 @@ footer h6 a {
     font-weight: 100;
     letter-spacing: 2px;
     text-decoration: none;
-    /* background: rgba(0, 0, 0, 0.2); */
     padding: 20px 5px;
     display: inline-block;
     width: 100%;
     text-align: center;
     transition: all 0.5s;
     position: relative;
-    /* left: 10px; */
 }
 
 
@@ -299,6 +315,17 @@ a:hover {
 /* Flex Container */
 .flex-nav ul {
     /* border: 1px solid black; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 11.4rem;
+    width: 80%;
+}
+
+.footer-flex-nav {
+    z-index: 33;
+    border: red;
     list-style: none;
     margin: 0;
     padding: 0;
