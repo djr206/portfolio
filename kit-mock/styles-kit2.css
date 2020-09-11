@@ -6,12 +6,24 @@
     font-family: sans-serif, Arial, Helvetica;
  }
 
- /* .profiles-sec {
+body {
+    min-height: 50vh;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .main-div {
+    flex-direction: row-reverse;
+    flex: 1 0 auto;
+} */
+ .profiles-sec {
      position: relative;
      margin: 4rem 4rem 2rem 15rem;
      z-index: 4;
- } */
+ }
 
+ 
  /* .profiles-foot {
      right: auto;
  } */
@@ -115,29 +127,20 @@ header h1 {
     left: -40px;
 }
 
-#img-foot {
-    padding: 2rem 0px 0px 0px;
-    z-index: -9;
-}
-
 #logo {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    bottom: 23rem;
+    bottom: 3rem;
     z-index: -19;
 }
 
-body {
-    border: 3px solid black;
-}
-
-.clearfix::after {
+/* .clearfix::after {
     content: "";
     clear: both;
     display: table;
-}
+} */
 
 p {
     color: white;
@@ -159,7 +162,7 @@ footer p {
         color: yellow;
         position: relative;
         text-align: center;
-        bottom: 21rem;
+        bottom: 2rem;
         z-index: -10;
         overflow: hidden;
 
@@ -180,8 +183,27 @@ section p {
     text-align: unset;
 }
 
-.p-main {
+/* .p-main {
     color: orangered;
+    position: inherit;
+    text-align: left;
+    left: 15rem;
+    width: 50rem;
+    z-index: 2;
+    font-family: 'Suwannaphum', cursive;
+} */
+
+div section p {
+    color: orangered;
+    position: inherit;
+    text-align: left;
+    left: 15rem;
+    width: 50rem;
+    z-index: 2;
+    font-family: 'Suwannaphum', cursive;
+}
+div section h2 {
+    color: black;
     position: inherit;
     text-align: left;
     left: 15rem;
@@ -193,19 +215,24 @@ section p {
 .foot-nav {
     position: relative;
     color: white;
-    bottom: 21rem;
+    /* bottom: 6rem; */
     text-align: center;
     z-index: 3;
 }
 
 #f-img1 {
-    top: 2em;
+    /* top: 15em; */
+    bottom: -15em;
     position: relative;
     width: 100%;
     overflow: hidden;
     z-index: -21;
 }
 
+/* #img-foot {
+    padding: 2rem 0px 0px 0px;
+    z-index: -9; */
+}
 /* footer h6 a {
     color: yellow;
     position: relative;
@@ -220,8 +247,8 @@ section p {
     flex-direction: column;
 } */
 
-#color {
-    color: rgb(56, 155, 189);
+.line-color {
+    color: black56, 155, 189);
 }
 
     /* 07.12.20 tooltip code from https://www.scriptol.com/css/tooltip.php */
@@ -265,7 +292,7 @@ section p {
 
 .wrapper li a {
     font-weight: 100;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     text-decoration: none;
     padding: 20px 5px;
     display: inline-block;
@@ -286,8 +313,8 @@ a:hover {
     margin: 0;
     padding: 0;
     display: flex;
-    margin-left: 11.4rem;
-    width: 80%;
+    margin-left: 12rem;
+    width: 75%;
 }
 
 /* .footer-flex-nav {
@@ -299,6 +326,10 @@ a:hover {
     display: flex;
     margin-left: 11.4rem;
     width: 80%;
+} */
+
+/* .bottom-stick {
+    flex-shrink: 0;
 } */
 
 .flex-nav li {
