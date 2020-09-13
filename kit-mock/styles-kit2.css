@@ -7,22 +7,14 @@
  }
 
 body {
-    min-height: 50vh;
     border: 3px solid black;
-    display: flex;
-    flex-direction: column;
 }
 
-/* .main-div {
-    flex-direction: row-reverse;
-    flex: 1 0 auto;
-} */
- .profiles-sec {
+.profiles-sec {
      position: relative;
      margin: 4rem 4rem 2rem 15rem;
      z-index: 4;
  }
-
  
  /* .profiles-foot {
      right: auto;
@@ -65,8 +57,7 @@ h6 {
 .section-text {
     float: left;
     margin: 2rem 4rem 2rem 15rem;
-    /* overflow-wrap: break-word; */
-    /* overflow: hidden; */
+    overflow-wrap: break-word;
 }
 
 a:link {
@@ -96,35 +87,17 @@ header h1 {
     text-transform: uppercase; 
     font-style: italic;
     font: bold;
+    transition: color 4s;
 }
 
-/* .header-nav {
-    height: 4rem;
-    background-color: lightgrey;
-} */
+header h1:hover {
+    color: white;
+}
 
-/* nav a {
-    color: black;
-    position: relative;
-    left: 15rem;
-    top: 1.5rem;
-    display: inline;
-    margin-right: 2em;
-}     */
-
-/* nav h3 {
-    margin: 0px;
-    text-transform: unset;
-} */
 .divider {
     position: relative;
     top:0px;
     left: 1em;
-}
-
-#img-side {
-    position: relative;
-    left: -40px;
 }
 
 #logo {
@@ -136,12 +109,6 @@ header h1 {
     z-index: -19;
 }
 
-/* .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-} */
-
 p {
     color: white;
     position: relative;
@@ -150,22 +117,13 @@ p {
     /* font-size: 2rem; */
 }
 
-/* <!-- 08.13.20 following div added for practice  --> */
-    /* .flex-bird {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      } */
-
 footer p {
-    
-        color: yellow;
-        position: relative;
-        text-align: center;
-        bottom: 2rem;
-        z-index: -10;
-        overflow: hidden;
-
+    color: yellow;
+    position: relative;
+    text-align: center;
+    bottom: 2rem;
+    z-index: -10;
+    overflow: hidden;
 }
 
 section a h5 {
@@ -183,25 +141,25 @@ section p {
     text-align: unset;
 }
 
-/* .p-main {
-    color: orangered;
-    position: inherit;
-    text-align: left;
-    left: 15rem;
-    width: 50rem;
-    z-index: 2;
-    font-family: 'Suwannaphum', cursive;
+.main-div {
+    display: flex;
+}
+/* div section {
+    flex-basis: 200px;
+}
+
+div aside {
+    flex-basis: 200px;
 } */
 
 div section p {
     color: orangered;
-    position: inherit;
-    text-align: left;
     left: 15rem;
     width: 50rem;
     z-index: 2;
     font-family: 'Suwannaphum', cursive;
 }
+
 div section h2 {
     color: black;
     position: inherit;
@@ -215,13 +173,11 @@ div section h2 {
 .foot-nav {
     position: relative;
     color: white;
-    /* bottom: 6rem; */
     text-align: center;
     z-index: 3;
 }
 
 #f-img1 {
-    /* top: 15em; */
     bottom: -15em;
     position: relative;
     width: 100%;
@@ -229,29 +185,11 @@ div section h2 {
     z-index: -21;
 }
 
-/* #img-foot {
-    padding: 2rem 0px 0px 0px;
-    z-index: -9; */
-}
-/* footer h6 a {
-    color: yellow;
-    position: relative;
-    margin-right: 2em;
-    left: unset;
-    top: unset;
-    z-index: -7;
-} */
-
-/* footer {
-    display: flex;
-    flex-direction: column;
-} */
-
 .line-color {
     color: black56, 155, 189);
 }
 
-    /* 07.12.20 tooltip code from https://www.scriptol.com/css/tooltip.php */
+    /* 07.12.20 original tooltip code from https://www.scriptol.com/css/tooltip.php */
 .tooltip {
     text-decoration:none;
     position:relative;
@@ -292,7 +230,6 @@ div section h2 {
 
 .wrapper li a {
     font-weight: 100;
-    /* letter-spacing: 2px; */
     text-decoration: none;
     padding: 20px 5px;
     display: inline-block;
@@ -306,9 +243,7 @@ a:hover {
     background: rgba(0, 0, 0, 0.3);
 } 
 
-/* Flex Container */
 .flex-nav ul {
-    /* border: 1px solid black; */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -317,30 +252,17 @@ a:hover {
     width: 75%;
 }
 
-/* .footer-flex-nav {
-    z-index: 33;
-    border: red;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-left: 11.4rem;
-    width: 80%;
-} */
-
-/* .bottom-stick {
-    flex-shrink: 0;
-} */
-
 .flex-nav li {
     flex: 3;
 }
 
 .flex-nav .social {
     flex: 1;
-    /* border: 1px solid black; */
     display: flex;
+}
 
+.flex-nav a:nth-child(odd) {
+    color: deeppink;
 }
 
 @media all and (max-width:1000px) {
@@ -355,8 +277,6 @@ a:hover {
 
 .flex-nav .social {
     flex: 1  1 25%;
-    /* align-items: center; */
-    }
 }
 
 @media all and (max-width:500px) {
