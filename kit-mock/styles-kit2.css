@@ -264,10 +264,20 @@ a:hover {
     display: flex;
 }
 
-.flex-nav a:nth-child(odd) {
-    color: deeppink;
+/* li a:nth-of-type(odd) {
+    color: hotpink;
+} */
+
+a:first-child {
+    color: gold;
 }
 
+/* ul:nth-child(odd) {
+    color: black;
+} */
+/* a:nth-child(3) {
+    color: black;
+} */
 @media all and (max-width:1000px) {
 
 .flex-nav ul {
