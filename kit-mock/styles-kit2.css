@@ -58,6 +58,9 @@ h6 {
     float: left;
     margin: 2rem 4rem 2rem 15rem;
     overflow-wrap: break-word;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 a:link {
