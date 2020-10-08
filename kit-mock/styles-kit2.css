@@ -68,7 +68,8 @@ a:link {
 }
 
 a {
-    color: #add8e6;
+    /* color: #add8e6; */
+    color: #9f2d62;
 }
 
 aside {
@@ -245,6 +246,19 @@ div section h2 {
 a:hover {
     background: rgba(0, 0, 0, 0.3);
 } 
+p a {
+    color: #008000;
+    background-color: #F8F1E2;
+    border-radius: 10%;
+}
+p a img {
+    background-color: grey;
+    color: ivory;
+}
+
+.flex-nav a {
+    color: gold;
+}
 
 .flex-nav ul {
     list-style: none;
@@ -267,11 +281,18 @@ a:hover {
 /* li a:nth-of-type(odd) {
     color: hotpink;
 } */
-
+/* 
 a:first-child {
     color: gold;
+} */
+nav.flex-nav ul {
+    color: gold;
 }
-
+footer a {
+    color: gold;
+    font-size: 15pt;
+    padding: 2em;
+}
 /* ul:nth-child(odd) {
     color: black;
 } */

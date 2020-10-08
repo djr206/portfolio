@@ -9,12 +9,15 @@
     <link rel="stylesheet" type="text/css" href="styles-kit2.css">
 </head>
     <body class="sansserif">
+    <a href="#maincontent">Skip to main content</a> 
     <header>
         <h1>Kitties to go!</h1>
         <h4><i>Seattle's premiere drive-thru<br>cat rentals</i></h4>
     </header>
     <div class="wrapper">
         <nav class="flex-nav">
+            <!-- 10.5.20 add hidden nav into for A11y purposes -->
+            <!-- <h2>Page and Social links</h2>             -->
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -42,10 +45,13 @@
         </nav>    
     </div>
     <div class="main-div">
-        <section class="section-text">
+        <section id="maincontent" class="section-text">
+            <!-- 10.5.20 add heading for A11y purposes -->
+            <!-- <main id="maincontent"> -->
+            <h2>What we love most about cats!</h2>
             <p class="line-color"><strong>Cat ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p> 
             <p><small>Cat facilisis gravida neque convallis a cras.
-            <a class="tooltip" href="">Hide head under blanket<span><img src="../images/cat-under-blanket.jpg" alt="Image popup of cat under blanket."><cite>by Heathen Dawn licensed under CC BY-NC-SA 2.0</cite></span></a>
+            <a class="tooltip" href="">Hide head under blanket<span><img src="x../images/cat-under-blanket.jpg" alt="Image popup of grey kitten with one eye and ear peering out from under a pink and yellow blanket."><cite>by Heathen Dawn licensed under CC BY-NC-SA 2.0</cite></span></a>
             so tempor commodo ullamcorper a lacus vestibulum sed arcu non. Sed libero enim sed faucibus turpis in. Facilisis gravida neque convallis a cras. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Sed libero enim sed faucibus turpis in. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Sed libero enim sed faucibus turpis in.</small></p>
             <br>
             <p><q>Please amet nulla facilisi morbi tempus iaculis urna id. Sit amet mauris commodo quis imperdiet. Egestas diam in arcu cursus euismod quis viverra nibh, meowwww, meowwww.</q></p>
@@ -54,7 +60,7 @@
             <!-- <h2 class="p-main" id=d-s-h2>the kitties to go story</h2> -->
             <h2>the kitties to go story</h2>
             <p><small>Ut tellus elementum sagittis vitae et. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Vehicula ipsum a arcu cursus vitae congue mauris. Sit amet cursus sit amet dictum sit amet justo. A cras semper auctor neque vitae tempus quam pellentesque. Justo nec ultrices dui sapien eget mi. Integer eget aliquet nibh praesent tristique magna sit amet purus. Elit pellentesque habitant morbi tristique. Auctor augue mauris 
-            <a class="tooltip" href="">then retire to the warmest spot<span><img src="../images/cat-sleep-sun.jpg" alt="Image popup of cat asleep in the sun."><cite> by Paul Albertella licensed under CC BY 2.0</cite></span></a>
+            <a class="tooltip" href="">then retire to the warmest spot<span><img src="../images/cat-sleep-sun.jpg" alt="Image popup of cat head and shoulders asleep in the sun on a fir floor."><cite> by Paul Albertella licensed under CC BY 2.0</cite></span></a>
             augue neque gravida in fermentum et. Et tortor consequat id porta nibh venenatis cras. Id velit ut tortor pretium viverra. Pellentesque adipiscing commodo elit at imperdiet dui accumsan.
             Velit aliquet sagittis id consectetur purus ut faucibus.<br><br>Ac odio tempor orci dapibus. Magna sit amet purus gravida quis blandit turpis cursus. Dui nunc mattis enim ut tellus elementum sagittis vitae. Dictum varius duis at consectetur. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Sit amet tellus cras adipiscing. Ut consequat semper viverra nam libero justo laoreet. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Dignissim diam quis enim lobortis. Eu lobortis elementum nibh tellus molestie nunc. Quam id leo in vitae turpis massa sed elementum.</small></p>
         </section>
@@ -77,7 +83,7 @@
         <img id="logo" src="images/lesson04-mock5-cat-logo.png" alt="Cat Logo">
         <p>Something else about cats goes here, not sure what exactly.<br>
          They swallow hair? I'll mull it and hopefully cough something up.</p>
-        <nav class="foot-nav">
+        <!-- <nav class="foot-nav">
         <h6>
             <a href="../#"><small>Footer link1<span class="divider">/</span></small></a>
             <a href="../#"><small>Footer link2<span class="divider">/</span></small></a>
@@ -85,7 +91,17 @@
             <a href="../#"><small>Footer link4</small></a>
         </h6>
         <h6>© 2020 Kitties to go!, LLC | Seattle, WA</h6>
-        </nav>
+        </nav> -->
+        <nav class="foot-nav">
+            <h6>
+                <a href="../#"><small>Footer link1<span class="divider"></span></small></a>
+                <a href="../#"><small>Footer link2<span class="divider"></span></small></a>
+                <a href="../#"><small>Footer link3<span class="divider"></span></small></a>
+                <a href="../#"><small>Footer link4</small></a>
+            </h6>
+            <h6>© 2020 Kitties to go!, LLC | Seattle, WA</h6>
+            </nav>
+    
     </footer>
 </body>
 </html>
