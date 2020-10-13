@@ -190,7 +190,7 @@ div section h2 {
 }
 
 .line-color {
-    color: black56, 155, 189);
+color: black;
 }
 
     /* 07.12.20 original tooltip code from https://www.scriptol.com/css/tooltip.php */
@@ -312,7 +312,7 @@ footer a {
 .flex-nav .social {
     flex: 1  1 25%;
 }
-
+}
 @media all and (max-width:500px) {
 
     .flex-nav li {
